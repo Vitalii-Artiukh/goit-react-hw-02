@@ -1,10 +1,8 @@
-import Profile from './components/Profile/Profile';
+import Profile from '../zip/Profile/Profile';
 import styles from './components/App.module.css';
-import userData from './components/Profile/userData.json';
-import friends from './components/FriendList/friends.json';
-import transactions from './components/TransactionHistory/transactions.json';
-import FriendList from './components/FriendList/FriendList';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Feedback from './components/Feedback/Feedback';
+import Options from './components/Options/Options';
+import Options from './components/Options/Options';
 
 const App = () => {
   return (
