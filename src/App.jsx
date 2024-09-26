@@ -1,4 +1,3 @@
-import Profile from '../zip/Profile/Profile';
 import styles from './components/App.module.css';
 import Feedback from './components/Feedback/Feedback';
 import Options from './components/Options/Options';
