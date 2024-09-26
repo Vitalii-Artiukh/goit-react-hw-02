@@ -1,0 +1,31 @@
+table {
+  max-width: 650px;
+}
+
+thead tr {
+  background-color: black;
+  color: #ffffff;
+}
+
+thead tr th {
+  width: calc(650px / 3);
+}
+
+tbody tr {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dadada;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #acacac;
+}
+
+tbody td:first-child {
+  text-align: left;
+  padding-left: 66px;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  color: yellow;
+  margin-bottom: 16px;
+}
+
+.task {
+  margin-bottom: 12px;
+}
