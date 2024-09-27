@@ -1,0 +1,7 @@
+.feedbackWrapper {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 152px;
+}

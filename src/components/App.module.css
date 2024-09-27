@@ -1,15 +1,6 @@
-/* .wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 50px;
-  text-align: center;
+.appWrapper {
+  background-color: rgb(241, 241, 241);
+  color: black;
+  font-weight: 400;
+  height: 380px;
 }
-
-.title {
-  color: yellow;
-  margin-bottom: 16px;
-}
-
-.task {
-  margin-bottom: 12px;
-} */

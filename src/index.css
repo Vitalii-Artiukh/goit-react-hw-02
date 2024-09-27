@@ -14,13 +14,13 @@
 }
 
 #root {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -45,8 +45,8 @@ body {
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
