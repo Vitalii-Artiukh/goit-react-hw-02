@@ -1,8 +1,8 @@
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
 import clsx from 'clsx';
 import styles from './Feedback.module.css';
 
-const Feedback = ({ feedback, totalFeedback }) => {
+const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   return (
     <div>
       {totalFeedback > 0 && (
@@ -11,13 +11,7 @@ const Feedback = ({ feedback, totalFeedback }) => {
           <li>Neutral: {feedback.neutral}</li>
           <li>Bad: {feedback.bad}</li>
           <li>Total: {totalFeedback}</li>
-          <li>
-            Positive:{' '}
-            {totalFeedback > 0
-              ? Math.round((feedback.good / totalFeedback) * 100)
-              : 0}
-            %
-          </li>
+          <li>Positive: {totalFeedback > 0 ? positiveFeedback : 0}%</li>
         </ul>
       )}
     </div>

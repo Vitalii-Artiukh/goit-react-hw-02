@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
 import clsx from 'clsx';
 import styles from './Options.module.css';
 
@@ -7,24 +7,24 @@ const Options = ({ updateFeedback, resetFeedback, totalFeedback }) => {
     <div className={clsx(styles.optionsWrapper)}>
       <button
         onClick={() => updateFeedback('good')}
-        className={clsx(styles.button)}
+        className={clsx(styles.good)}
       >
         Good
       </button>
       <button
         onClick={() => updateFeedback('neutral')}
-        className={clsx(styles.button)}
+        className={clsx(styles.neutral)}
       >
         Neutral
       </button>
       <button
         onClick={() => updateFeedback('bad')}
-        className={clsx(styles.button)}
+        className={clsx(styles.bad)}
       >
         Bad
       </button>
       {totalFeedback > 0 && (
-        <button onClick={() => resetFeedback()} className={clsx(styles.button)}>
+        <button onClick={() => resetFeedback()} className={clsx(styles.reset)}>
           Reset
         </button>
       )}

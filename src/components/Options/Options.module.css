@@ -5,11 +5,50 @@
   padding: 8px;
 }
 
-.button {
+button {
   padding: 6px 12px;
   background-color: rgb(189, 189, 189);
   border: none;
   border-radius: 4px;
   color: black;
   font-weight: 500;
+  box-shadow: 0.4px 0.7px 0.8px #a1a1a12a, 0.8px 1.8px 2.2px -0.6px #a1a1a12a,
+    1.6px 3.4px 4.2px -1.2px #a1a1a12a, 3.5px 6.5px 8.5px -1.9px #a1a1a12a,
+    6.4px 12px 16.4px -2.5px #a1a1a12a;
+  cursor: pointer;
+}
+
+button.good {
+  width: 85px;
+  &:hover {
+    color: rgb(2, 179, 2);
+    font-weight: 700;
+  }
+  &:focus {
+    background-color: rgb(90, 201, 90);
+    color: black;
+    font-weight: 700;
+  }
+}
+
+button.neutral {
+  width: 80px;
+  &:hover {
+    font-weight: 700;
+    background-color: rgb(168, 168, 168);
+  }
+}
+
+button.bad {
+  width: 70px;
+  &:hover,
+  &:focus {
+    color: rgb(167, 2, 2);
+    font-weight: 700;
+  }
+}
+
+button.reset:hover {
+  font-weight: 600;
+  background-color: rgb(175, 174, 174);
 }
