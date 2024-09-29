@@ -2,12 +2,10 @@ import clsx from 'clsx';
 import { React } from 'react';
 import styles from './Notification.module.css';
 
-const Notification = ({ totalFeedback }) => {
+const Notification = () => {
   return (
     <>
-      {totalFeedback === 0 ? (
-        <p className={clsx(styles.notification)}>No feedback yet</p>
-      ) : null}
+      <p className={clsx(styles.notification)}>No feedback yet</p>
     </>
   );
 };

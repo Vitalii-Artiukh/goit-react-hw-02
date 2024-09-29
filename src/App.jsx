@@ -54,12 +54,15 @@ const App = () => {
         resetFeedback={resetFeedback}
         totalFeedback={totalFeedback}
       />
-      <Notification totalFeedback={totalFeedback} />
-      <Feedback
-        feedback={feedback}
-        totalFeedback={totalFeedback}
-        positiveFeedback={positiveFeedback}
-      />
+      {totalFeedback > 0 ? (
+        <Feedback
+          feedback={feedback}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
+      ) : (
+        <Notification totalFeedback={totalFeedback} />
+      )}
     </div>
   );
 };
