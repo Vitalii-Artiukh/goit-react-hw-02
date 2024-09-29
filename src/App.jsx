@@ -33,6 +33,10 @@ const App = () => {
     localStorage.setItem('saveFeedbackResult', JSON.stringify(feedback));
   }, [feedback]);
 
+  useEffect(() => {
+    document.title = 'Feedback';
+  });
+
   ///////  обнуляю відгуки  //////
   const resetFeedback = () => {
     setFeedback({
