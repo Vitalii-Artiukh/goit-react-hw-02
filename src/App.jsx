@@ -39,11 +39,7 @@ const App = () => {
 
   ///////  обнуляю відгуки  //////
   const resetFeedback = () => {
-    setFeedback({
-      good: (feedback.good = 0),
-      neutral: (feedback.neutral = 0),
-      bad: (feedback.bad = 0),
-    });
+    setFeedback(listFeedback);
   };
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
